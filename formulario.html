@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Física</title>
+</head>
+<body>
+    <h2>Formulario de Física</h2>
+    <form method="post" enctype="multipart/form-data" action="formulario.php">
+        <label for="fisica">FISICA:</label>
+        <input type="text" id="fisica" name="fisica" required><br><br>
+
+        <label for="id_formula">ID_Formula:</label>
+        <input type="text" id="id_formula" name="id_formula" required><br><br>
+
+        <label for="nombre_formula">Nombre Formula:</label>
+        <input type="text" id="nombre_formula" name="nombre_formula" required><br><br>
+
+        <label for="imagen">Insertar Imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="tabla">Seleccione la tabla:</label>
+        <select id="tabla" name="tabla">
+            <option value="Fisica_I">FISICA I</option>
+            <option value="Fisica_II">FISICA II</option>
+            <option value="Fisica_III">FISICA III</option>
+            <option value="Fisica_IV">FISICA IV</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
